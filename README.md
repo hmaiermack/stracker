@@ -46,6 +46,7 @@ Utilizes Trackingmore tracking API to get real-time tracking data, but could eas
 Enums are used for filtering data on the client, and could be any number of specific details related to what you are tracking, e.g. a factory, warehouse, etc. Everything else in `schema.prisma` is standard to NextAuth.
 
 # To Run Application
+- `npm install`
 - Change value of `DATABASE_URL` in the `.env` file in the root directory to wherever you want the Postgres DB to be.
 - `npx prisma db push` This command will sync your Prisma schema with your database and will generate the TypeScript types for the Prisma Client based on your schema.
 - `npm run db-seed` 
